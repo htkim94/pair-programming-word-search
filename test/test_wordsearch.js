@@ -35,4 +35,21 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+
+  it("should return true if the word is present", function() {
+    const result = wordSearch([
+      ['N', 'I', 'V', 'E', 'K'],
+      ['S', 'E', 'I', 'N', 'F'],
+      ['Y', 'F', 'C', 'F', 'Q'],
+      ['H', 'M', 'J', 'T', 'E'],
+      ['W', 'H', 'C', 'S', 'Y'],
+      ['B', 'F', 'R', 'E', 'N'],
+      ['U', 'B', 'T', 'W', 'A'],
+      ['O', 'D', 'C', 'A', 'K'],
+      ['E', 'Z', 'K', 'F', 'Q'],
+    ], 'KEVIN')
+
+    assert.isTrue(result);
+  });
+
 });
